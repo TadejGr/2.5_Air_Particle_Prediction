@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    
+</head>
+<body>
+    <header>
+        <div id="brandname">
+            Machine Learning App with Flask
+        </div>
+        <h2>Air Quality Index Prediction</h2>
+    </header>
+    
+    <form action="{{url_for('predict')}}" method="POST">
+        <p>Click the Predict Button</p>
+        <textarea name="message" rows="6" cols="50"></textarea>
+        <br/>
+        <input type="submit" value="predict">
+    </form>
+</body>
+</html>
